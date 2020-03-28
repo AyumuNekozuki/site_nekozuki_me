@@ -1,0 +1,295 @@
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-track{
+  background: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: inset 0 0 2px #777; 
+}
+::-webkit-scrollbar-thumb{
+  background: #C1C1C1;
+  border-radius: 15px;
+  box-shadow: none;
+}
+body{
+  /*フッター関係*/
+  padding: 0;
+  margin: 0 auto;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  font-size: 18px;
+  background-color: #FAFAFA;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+header{
+  height: 70px;
+  background-color: #4B4B4B;
+  margin: none;
+  width:100%;
+  position: fixed;
+
+  color:white;
+}
+h1{
+  margin: 15px 20px;
+  height: 100%;
+  font-size: 3vh;
+  cursor: pointer;
+}
+h2{
+  border-left: 5px solid black;
+  padding-left: 10px;
+}
+h3{
+  border-left: 3px solid black;
+  padding-left: 10px;
+}
+.logo{
+  display: inline-block;
+}
+
+.main{
+  clear: both;
+  display: block;
+  padding-top: 70px;
+}
+.main2{
+  max-width: 1000px;
+  margin: auto;
+}
+.consept-Teema{
+  margin: 0;
+  color: red;
+  font-size: x-large;
+  text-align: center;
+  border-left: none;
+}
+.headimgdiv{
+  text-align: center;
+}
+.headimg{
+  max-height: 80vh;
+  max-width: 100%;
+}
+.youkou{
+  text-align: left;
+}
+footer{
+  width: 100vw;
+  background-color: #4B4B4B;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto;
+  color: white;
+}
+.left{
+  width: 45%;
+  display: inline-block;
+  margin-right: 10px;
+  text-align: right;
+}
+.beta{
+  width: 40%;
+}
+
+.right h3{
+  border-left: 2px solid white;
+  padding-left: 10px;
+}
+.fot_member h4{
+  margin-bottom: 0;
+}
+.fot_member p{
+  margin-top: 0;
+  margin-left: 15px;
+}
+.fot_notfloat{
+  clear: both;
+  margin-top :30px;
+}
+.fot_notfloat p{
+  padding-top :30px;
+}
+
+
+#page_top{
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+}
+#page_top a{
+  width: 60px;
+  height: 60px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f139';
+  font-size: 50px;
+  color: #5AD8E6;
+}
+
+
+@media screen and (min-width:1380px) {
+  /*PC*/
+  .sp{
+    display: none;
+  }
+  .right{
+    display: inline-block;
+    float: right;
+    width: 50%;
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .header-menu{
+    margin: 10px 25px;
+    display: inline-block;
+    float: right;
+  }
+  .header_ul{
+    margin: 10px;
+  }
+  .header_ul li{
+    list-style-type: none; /*点を非表示*/
+    display: inline-block;
+    margin: auto 25px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .header_ul a{
+    text-decoration: none;
+    color: white;
+  }
+
+}
+
+@media screen and (min-width:890px) and (max-width:1380px) {
+  /*tab*/
+  .pc{
+    display: none;
+  }
+  .right{
+    display: inline-block;
+    text-align: left;
+  }
+
+
+  header label {
+    float: right;
+    font-size: 45px;
+    font-weight: bold;
+    cursor :pointer;
+  }
+  header input {
+    display: none;
+  }
+  #header-menu{
+    background-color: #4D4D4D;
+    color: white;
+  }
+  header #header-menu {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+    width: 100%;
+  }
+  header input:checked ~ #header-menu {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;
+  }
+  header label:before {
+    content: '\f0c9';
+    font-family: 'Font Awesome 5 Free';
+    padding-right: 15px;
+    color: white;
+  }
+
+  .header_ul{
+    text-align: center;
+  }
+  .header_ul li{
+    list-style-type: none; /*点を非表示*/
+    display: inline-block;
+    margin: auto 25px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .header_ul a{
+    text-decoration: none;
+    color: white;
+  }
+  
+}
+
+@media screen and (max-width:890px){
+  /*sp*/
+  .pc{
+    display: none;
+  }
+  .right{
+    display: inline-block;
+    text-align: left;
+  }
+
+
+  header label {
+    float: right;
+    font-size: 45px;
+    font-weight: bold;
+    cursor :pointer;
+  }
+  header input {
+    display: none;
+  }
+  #header-menu{
+    background-color: #4D4D4D;
+    color: white;
+  }
+  header #header-menu {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+    width: 100%;
+  }
+  header input:checked ~ #header-menu {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;
+  }
+  header label:before {
+    content: '\f0c9';
+    font-family: 'Font Awesome 5 Free';
+    padding-right: 15px;
+    color: white;
+  }
+
+  .header_ul{
+    text-align: center;
+  }
+  .header_ul li{
+    list-style-type: none; /*点を非表示*/
+    margin: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    
+  }
+  .header_ul a{
+    text-decoration: none;
+    color: white;
+  }
+  
+}
