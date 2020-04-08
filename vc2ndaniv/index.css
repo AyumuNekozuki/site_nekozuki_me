@@ -168,7 +168,13 @@ footer{
 .name a{
   color:black;
 }
+.name a:visited{
+  color:black;
+}
 .title a:visited{
+  color:blue;
+}
+td a:visited{
   color:blue;
 }
 
