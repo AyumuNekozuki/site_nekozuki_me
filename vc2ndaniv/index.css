@@ -143,9 +143,11 @@ footer{
 .comicon{
   width: 10%;
   padding: 0;
+  height: 100px;
 }
 .comicon img{
-  width: 100%;
+  max-width: 100%;
+  max-height:100px;
 }
 .content{
   vertical-align: top;
@@ -162,6 +164,12 @@ footer{
 .name{
   float: right;
   text-align: right;
+}
+.name a{
+  color:black;
+}
+.title a:visited{
+  color:blue;
 }
 
 
